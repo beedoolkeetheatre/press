@@ -1,0 +1,40 @@
+body{
+    margin:30px;
+    line-height: 1.5;
+}
+.container{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+}
+#left{
+    padding-right:20px;
+}
+#right{
+    padding-left:20px;
+    padding-top:25px;
+    font-size:small;
+}
+@media(max-width:600px){
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+    #right{
+        padding-left:0;
+        padding-top:0;
+        font-size:medium;
+    }
+    #contact{
+        display:none;
+    }
+}
+h2{
+    font-size:medium;
+}
+.main{
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+a{
+    color:black;
+    text-decoration-style: dotted;
+}
